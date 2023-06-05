@@ -24,15 +24,18 @@ Resultado final:
 Rodrigo Curvêllo: 5.9 m
 
 
-
-
-
 com a entrada de 3 valores ordenalos de forma crescente
 
 
 */
 
-const { obterTexto, obterNumero, obterInteiroPositivo } = require("./util");
+
+
+
+
+
+
+//const { obterTexto, obterNumero, obterInteiroPositivo } = require("./util");
 
 
 
@@ -62,6 +65,8 @@ const { obterTexto, obterNumero, obterInteiroPositivo } = require("./util");
 //     }
 
 // }
+
+
 
 // function saudacao(){
 //     console.log('ola boa noite');
@@ -115,6 +120,6 @@ const { obterTexto, obterNumero, obterInteiroPositivo } = require("./util");
 
 // console.log(frase.split('o'));
 
-const nome = obterTexto('seu nome ');
-const idade = obterInteiroPositivo(' sua idade');
-console.log(nome);
+// const nome = obterTexto('seu nome ');
+// const idade = obterInteiroPositivo(' sua idade');
+// console.log(nome);
