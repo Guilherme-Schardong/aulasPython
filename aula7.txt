@@ -1,0 +1,207 @@
+trabalhando com arquivos
+
+
+sintaxe basica
+
+
+open(<file>,<mode>)
+       *       *
+       *       *
+       *       * * * ***************
+caminho relativo ou absoluto       *
+do arquivo(incluindo a extenção)   *
+                                   *
+                                 Uma string(caractere)indica o que
+                                  voce quer fazer com o arquivo
+
+
+primeiro parameto o arquivo
+
+geralmente, utiliza-se um caminho relativo.
+ele indica onde o arquivo está localizado em relação
+à localização do script(arquivo python) que está chamando
+a função
+
+exemplo se tiver apenas o nome do arquivo é por que esta na 
+mesma pasta 
+
+se existir uma pasta só para este arquivom dentro da pasta do
+arquivopython voce necessita passar a pasta /  e o nome do arquivo
+
+nao esquecer a extenção do arquivo
+
+
+segundo parametro o modo
+
+o caracter diz ao python o que voce pretende fazercom o arquivo
+
+
+"r"  read  ler
+
+"a"  append adicionar
+
+"w" write escrever
+
+"x" criar
+
+exemplo 
+
+f = open("data/names.txt")
+print(f.read())
+
+print(type(f.read()))
+
+voce pode só ler o arquivo ou limitar o numero de bytes que vai ler
+basta passar a qunatidade de bytes nos paratenses do read
+
+sempre quie voce termina precisa fechar o arquivo 
+usa o close() para isso
+
+
+readline ()  X  readlines()
+
+readline() lê uma linha do arquivo até o fim dessa linha.
+Um caractere de nova linha (\n) à direita é mantido na string.
+
+
+f = open("data/names.txt")
+print(f.readline())
+f.close()
+
+
+
+
+Por outro lado, readlines() retorna uma lista com todas as linhas 
+do arquivo como elementos individuais (strings). Esta é a sintaxe:
+
+f = open("data/names.txt")
+print(f.readlines())
+f.close()
+
+
+
+f = open("data/names.txt")
+
+for line in f.readlines():
+    # Fazer algo com cada linha
+    
+f.close()
+
+
+
+
+f = open("data/names.txt", "r")
+
+for line in f:
+	# Fazer algo com cada linha
+
+f.close()
+
+
+
+
+criar arquivos 
+
+f = open("new_file.txt", "x")
+
+se tentar criar com um nome ja existente dara um erro
+
+
+
+modificar um arquivo
+
+Para modificar (escrever em) um arquivo, precisamos utilizar 
+o método write(). Há duas formas de se fazer isso (acrescentar ou escrever)
+ baseado no modo em que você escolheu abrir o arquivo
+
+
+
+Acrescentar (append)
+Acrescentar, aqui, significa acrescentar algo no final de outra
+ coisa. O modo "a" permite que você abra um arquivo para 
+acrescentar conteúdo a ele.
+e se quisermos adicionar uma nova linha a ele, podemos abrir
+ o arquivo utilizando o modo "a" (append) e, em seguida, 
+chamar o método write(), passando o conteúdo que queremos 
+acrescentar como argumento.
+
+f = open("data/names.txt", "a")
+f.write("\nNew Line")
+f.close()
+
+
+Dica: observe que estou adicionando um \n antes da linha 
+para indicar que quero que apareça em uma nova linha, 
+não em uma continuação da linha existente.
+
+Escrever (write)
+Às vezes, você pode querer excluir um conteúdo do arquivo e 
+substituí-lo totalmente por um novo conteúdo. Podemos fazer 
+isso utilizando o método write() se abrirmos o arquivo com 
+o modo "w".
+
+
+f = open("data/names.txt", "w")
+f.write("New Content")
+f.close()
+
+
+Se quisermos escrever várias linhas de uma vez, podemos usar 
+o método writelines(), que leva uma lista de strings. Cada 
+string representa uma linha a ser adicionada ao arquivo
+
+
+
+f = open("data/names.txt", "a")
+f.writelines(["\nline1", "\nline2", "\nline3"])
+f.close()
+
+
+
+gerenciador de contexto
+
+Gerenciadores de contexto (context managers, em inglês)
+são construções do Python que tornam a sua vida mais fácil. 
+Usando-os, você não precisa se lembrar de fechar um arquivo
+ no final do seu programa e tem acesso ao arquivo em uma parte
+ específica do programa que você escolher.
+
+with open("<file>","<mode>") as <var>:
+
+
+with palavra chave 
+open file e mode é o obejeto de arquivo
+var variavel que sera usada para se referir ao objeto de arquivo
+
+
+with open("<path>", "<mode>") as <var>:
+    # Trabalhando com o arquivo...
+
+# O arquivo é fechado aqui!
+
+
+with open("data/names.txt", "r+") as f:
+    print(f.readlines()) 
+
+
+mais de uma ação na mesma instancia do objeto de arquivo 
+usa-se o caracate e o sinal de +
+
+
+f = open("data/names.txt", "r+") # Ler + Escrever
+
+f = open("data/names.txt", "a+") # Ler + Acrescentar
+
+f = open("data/names.txt", "w+") # Ler + Escrever
+
+
+
+# f = open("testeDeaula.txt", "x")
+# f.close()
+
+f = open("testeDeaula.txt", "r+")
+
+print(f.readlines()) # Tentativa de ler
+#f.write("\n New Content")
+
+f.close()
