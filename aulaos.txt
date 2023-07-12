@@ -1,0 +1,61 @@
+os 
+ biblioteca de manipulação de sistema operacional
+
+environ 
+
+
+
+
+pastas 
+
+os.gtcwd()    retorna o  caminho em que seu script esta
+
+
+
+
+os.chdir()    como mudar de caminho
+
+'r'  usa se sempre que tiver uma contra barra em uma string 
+para  evitar que o  python interprete como codigo exemplo \n
+
+
+
+os.mkdir() e os.listdir()   mkdir cria um arquivo PASTA
+
+listdir lista o que tem no local que voce esta
+
+
+
+os.makedirs()   cria varias pastas em cadeadas
+
+
+
+os.rmdir()    remove pastas vazias passando o caminho 
+
+
+
+
+
+arquivos
+
+
+os.starfile()  acessa o arquivo com o caminho especificado
+
+pouco utilizado mais comum usar o open
+
+os.rename()   renomear um nome de arquivo  passando o nome atual
+e o novo nome do arquivo
+
+
+os.remove()   remove um arquivo passando o nome do arquivo
+
+
+
+os.walk()    
+
+for root, dirs, files in os.walk(os.getcwd()):
+
+
+isfile()   retorna true se é um arquivo
+
+isdir()   retorna true se for um diretorio(pasta)
