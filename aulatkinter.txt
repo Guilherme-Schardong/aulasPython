@@ -1,0 +1,46 @@
+aula de interface
+
+ primeiro vamos importar a bibilioteca
+
+
+from tkinter import*
+
+
+tk()  cria a janela
+
+janela = tk()
+
+geometry   define um tamanho para janela
+
+title  modifica o titutlo
+
+mainloop()  vai ao final do comando da janela para mantela aberta
+
+
+label()  cria um texto na 
+
+dentro de label voce diz a qual janela ele pertence e o txt ou texto que tera nele
+
+
+a opção grid() posiciona os itens na janela com colum ou colunas e row ou linha imaginarias
+
+padx e pady  voce passa espacamento nos eixos x e y
+
+
+
+entry() é uma entrada de dados  tambe recebe a janela a qual pertence e tem width que é sua largura
+
+tambem usa grid para se posiscionar
+
+
+usa se o get para pegar os valores nas entry retorna uma string
+
+
+button() coloca um botao na tela tambem precisa dizer a qual janela pertence, tem txt 
+e o comand=  que é o que vai ser feito ao clicar
+
+e tbm usa o grid para posicionalo
+
+
+
+
