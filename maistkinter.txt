@@ -1,0 +1,26 @@
+em computação se definiu um plano cartesiano de eixo x
+e eixo y mas utilizamos a penas o 4 quadrante
+
+0-------------->x
+|
+|
+|
+|
+|
+|
+y
+
+ambos positivos 
+
+metodo place de dimensionamento dos componentes
+
+.place(x= , y= )
+
+
+
+bg e fg
+
+
+https://www.tutorialspoint.com/python/python_gui_programming.htm
+
+https://www.tutorialspoint.com/python/tk_checkbutton.htm#
