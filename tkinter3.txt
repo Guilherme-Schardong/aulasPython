@@ -1,0 +1,57 @@
+ a opção resizable  define se pode ser redimencionado
+ o tamanho da tela
+
+resizable(true, true)   o primeiro true é para horizontal eixo x
+e o segundo true e  para vertical eixo y
+
+
+maxsize passando width e height seta os valores maximos de tamanho
+da tela
+
+minsize passando width e height seta os valore sminimos da tela
+
+
+place para alocação usando o relx  e rely
+aceita uma numeração de zero a um
+zero é 100 porcento a esquerda 
+e 1 é 100 porcento a direita
+
+relwith 0 é nada  e 1 é 100 de espaço de largura ocupara
+relheight  0  nada e 1 é 100 de espaço de altura que ocupará
+
+frame é um componente de organização 
+
+checkbutton  precisa dizer a qual janela pertence
+tem uma opação text  e o principal a variable na qual 
+voce aponta uma variavel que vai receber o valor do check
+por padrao o valor on é 1 e o off é 0 mas pode ser mudado
+
+bd ou border passando o tamo em pixels para colocar borda
+
+
+mas para aparecer a borad precisa de um relif (estilo) que vai receber um dos paramentros o 
+mais comum é solid que é uma linha continua
+
+flat   
+
+raised
+
+sunken
+
+ridge
+
+grove  
+
+
+
+overrelif  que é o que acontence ao passar o mouse em cima estilo
+
+
+toplevel() cria uma janela apartir de uma principal
+
+transient() diz a qual janela esta nova janelapertence dentro dos paramentros se passa a janela de origem
+
+focus_forced()  força o foco na nova janela
+grab_set() não deixa digitar e nem clicar fora da nova janela
+
+detroy é o comando que faz a mesma função do x da janela fechadno ela
