@@ -1,0 +1,30 @@
+expressao lambda
+
+sao funcoes anonimas
+
+servem para executar funções em uma linha só
+
+por exemplo funcao
+
+def calcularimposto(preco, imposto):
+	resultado = preco * (imposto/100)
+	return resultado
+
+
+preco = 100
+imposto = 25
+
+print(calcularimposto(preco, imposto))
+
+imposto2 = lambda x,y: x * (y/100)
+
+print(imposto2(preco,imposto))
+
+
+
+
+mexer nas fontes do seu texto 
+
+basta dentro delas usar o paramentro
+
+font('Arial 15 bold')
