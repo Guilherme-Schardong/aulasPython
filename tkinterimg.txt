@@ -1,0 +1,46 @@
+imagens para usar no tkinter formato indicado gif
+
+logo = photoImage(file=)   aqui voce passa o caminho do arquivo
+
+depois voce atribui a uma label por exemplo só que ao inves dessa
+
+label ter um parametro text ela tera um paramentro image que vai
+
+receber o logo voce pode aumenter usando zoom ou diminuir usando
+
+subsample mas o ideal é formatar suas iamgens antes de usar no 
+
+programa
+
+pixlr.com
+iconarchive.com
+
+icones voce pode selecionar arquivos tipo ico
+
+com o comando iconbitmap() dentro dele passando o caminho do 
+
+arquivo do tipo ico
+
+combobox
+
+combobox () e dentro dela dizer a qaula janela pertence
+
+precisara importar uma modulo novo
+
+from tkinter.ttk import *
+
+e para passar os valores da combo box
+
+com o mesmo nome que voce deu ao combobox
+
+exemplo combo['values'] = pode passar uma lista ou tupla
+
+depois posiciona o combo na sua janela
+
+voce pode selecionar o valor inicial para combobox
+
+fazendo o seguinte comando combo.current() e dentro dos parentese
+
+sera o index de sua lista ou tupla
+
+e para obter os valores da combobox basta usar a função get
