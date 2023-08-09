@@ -1,0 +1,38 @@
+amenssagens informativas   vem apenas com o botao ok
+
+
+ showinfo(title= , message=)  informação 
+
+ showwarning()    alerta
+
+ showerror()    erro
+
+--------------------------------------------------------------
+
+messagens interativas tem mais açoes nela
+
+
+askyesno()   pergunta e tem opção sim e nao se selecionar sim return True e nao False
+
+askquestion()   igual ao askyesno
+
+askokcancel()  botoes ok e cancelar  true e false de retorno
+
+askretrycancel()   botoes repetir e cancelar  true e false de retorno 
+
+askyesnocancel() botoes sim nao cancelar  true false none de retorno
+
+
+---------------------------------------------------------------------------------------------
+
+
+list boxes
+
+ListBox() passando a qual janela pertence  voce pode usar o insert para insereir
+
+itens a list box passando a posição e o item a ser inserido
+
+e para utilizar o valor selecionado basta utilizar o get(ACTIVE) para pegar o valor 
+
+selecionado e para remover utilizara o curseletion() como parametro do delete()
+
