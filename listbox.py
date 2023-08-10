@@ -5,7 +5,9 @@ def add_value():
 
 def remove_item():
     lsib.delete(lsib.curselection())
-
+    # a função curselection() retorna uma tulpa com a posição dos itens selecionados se nada foi selecionado retorna uma tupla vazia
+    # para fins de comparação uma tumpla vazia é igual a () ou voce tambem pode utilizar o metodo ''.join() e dentro dele utilizar o 
+    # curselection() para trransformar em uma string que para fins de comparação em caso de vazio é igual a ''.
 
 def imp_selection():
     print(lsib.get(ACTIVE))
