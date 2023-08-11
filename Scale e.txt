@@ -1,0 +1,43 @@
+scale  ==   é igual uma barra de defeinição de valores 
+
+Scale()  paramentro a qual janela pertence detro dele passamos o valor minimo e maximo
+
+from_=   min   to= maximo  por padrao a orientação e vertical
+
+para miodificar basta utilizar orient =  e nele passar por exemplo horizontal para mudar 
+
+a orientação por padrao avança um por vez voce pode utilizar o parametro resolution= 0,5 
+
+neste caso aprogressao é em 0.5 para pegar os seus valores pode utilizar o command= dentro
+
+dele mesmo ou utilizando um get()sobre sua variavel
+
+
+-------------------------------------------------------------------------------------------
+
+radiobutton
+
+muito semelhante ao checkbutton com a principal diferença que radiosbuttons vem em grupos e
+
+que normalmente só se permite a seleção de um deles por vez.
+
+
+valor_a = intvar()
+
+ra_1 = RadioButton(app, text='opção a 1', variable= valor_a, value=1)
+ra_2 = RadioButton(app, text='opção a 2', variable= valor_a, value=2)
+ra_3 = RadioButton(app, text='opção a 3', variable= valor_a, value=3)
+
+voce pode ja deixar um pre selecionado com o comando
+
+ra_1.select()
+
+voce pode mudar seu visual com o indicatoron= 0 para um formato de botao ou 1 
+
+para o formato normal
+
+e ainda voce pode usar o paramentro command= para chamar uma função direto na seleçao 
+
+do radio buton
+
+e pegar seu valor atraves do get() de sua variavel
