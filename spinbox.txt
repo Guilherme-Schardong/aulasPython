@@ -1,0 +1,20 @@
+Spinbox
+
+Spinbox()  primeiramente a qual janela pertence  
+
+pode por from_= min , to= max  mas alem do from e to
+
+podem utilizar values = ()  passando uma lista  com coleção
+
+para os valores
+
+e ainda temos o parametro , wrap=False que ele começa sempre em False
+
+mas quando voce for utilizar ele  estara definido como true  que permite
+
+que voce recicle a lista
+
+lembrando que o spinbox é uma entry ou seja alem dos valores definido por voce 
+
+é possivel escrever dentro da entry ter sempre cuidado 
+
