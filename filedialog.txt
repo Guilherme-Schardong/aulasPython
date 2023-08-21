@@ -1,0 +1,19 @@
+FIleDIalog
+
+
+
+tkinter.filedialog.askopenfilename()
+
+tkinter.filedialog.askopenfilenames()
+
+As duas funções acima criam uma caixa de diálogo Open e retornam um ou mais nomes 
+
+de arquivos selecionados que correspondem aos arquivos existentes.
+
+
+
+tkinter.filedialog.askdirectory()
+
+Solicita ao usuário que selecione um diretório.
+
+
