@@ -1,0 +1,45 @@
+tree view
+
+from tkinter import ttk
+
+
+
+ttk.treeview()  dizer a qual janela pertence
+
+columns=()  modelo que as informações vao chegar ainda nao é o nome da coluna
+
+show= 'headings'  dizendo que vai ficar o cabeçalho aparecendo 
+
+.column() dentro vai umas das colunas especificadas anteriormente
+
+e o minwidth=  e width= a largura minima e a largura da coluna
+
+.heading() dentro vai uma das colunas especificadas e text= que vai ser 
+
+o que ira aparecer no cabeçalho
+
+para colocar valores utioliza-se o .insert() primeiro paramkentro serai o 
+
+parent vamos deixar em branco pois estamos usando o ponto insert que ja atribui a qual
+
+parente vamos iserir valor depois temos que passar o index a onde iremos inserir o valor
+
+como vimos no listbox podemos passaqr o 'end' para sempre popular na ultima posição
+
+e porf fim o parametro values no qualç passamos os valores na ordem das colunas criadas
+
+
+para interagir com o item selecionado basta utilizar o .selection  que rfetorna uma tupla com os item selecionados
+
+para utilizar o primeiro item da tupla [0] basta passar a posiçao zero
+
+para deletar basta usar o .delete() passando o item selecionda com o .selection()
+
+e para acessar as informações do item selecionado voce vai utilizar o .item()  e dentro dele 
+
+voce passa o item que esta selexcionado e o segundo parametro é o que voce quer desse item selecionado
+
+passando values ele vai retornar uma coleção com as colunas do item e ai para acessar um valor especifico
+
+de uma das colunas basta passar o indice corespodente a coluna que tem a informação desejada
+
