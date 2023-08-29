@@ -1,0 +1,50 @@
+primeiro instalar o driver do mysql
+
+pip install mysql-connector-python
+
+depois de intalado necessario importar o driver
+
+import mysql.connector
+
+
+depois preciasa criar a conexão e o cursor
+
+conexao = mysql.connector.connect(
+    host='localhost',                 
+    user='root',                 usuario
+    password='',                 senha
+    database='colegio',
+)
+
+cursor = conexao.cursor()
+
+
+depois disso lembrar sempre que no final voce precisa fechar o cursor e a conexao
+
+cursor.close()
+conexao.close()
+
+os metodos do CRUD sempre vao uasr um comando
+
+comando =f'INSERT INTO cliente (nomeCliente, idadeCliente, idSexo) VALUES ("{nome}", {idade}, {sexo})'
+
+que sera um string de commando sql
+
+que sera executado pelo cursor
+
+cursor.execute(comando)
+
+e sera enviado pela conexao
+
+com duas diferenças quando formos editar o banco utilizamos
+
+conexao.commit() 
+
+e quando vamos apenas ler o banco utilizamos
+
+resultado = cursor.fetchall()
+
+
+
+
+conexao.is_connected()  retorna true ou false se esta conectado ao banco ou nao
