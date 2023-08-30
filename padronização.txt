@@ -1,0 +1,16 @@
+from mysql.connector import Error
+
+
+row count()  conta quantos registros foram inseridos 
+
+Error retorna os erros no processo de utilização do banco de dados
+
+
+conexao.isconnected()  retorna um true ou false ]
+
+true se a conexão ainda esta aberta 
+
+e false se a conexao nao esta mais aberta
+
+
+""" """  aspas triplas permitem a quebra de linha da string do codigo sql
